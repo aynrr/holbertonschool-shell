@@ -2,5 +2,5 @@
 #this is my first while loop in shell
 while (($count <=10)); do
 	echo "Best School"
-	count=$((count+1))
+	count=((count+1))
 done
