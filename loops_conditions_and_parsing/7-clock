@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#I'm just a comment in my worldd
+h=0
+m=1
+while ((h<=12)); do
+	echo "Hour: $h"
+	while ((m<=59)); do
+		echo "$m"
+		m=$((m+1))
+	done
+	m=1
+	h=$((h+1))
+done
