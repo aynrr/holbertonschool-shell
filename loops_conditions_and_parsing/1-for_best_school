@@ -1,4 +1,5 @@
 #!/user/bin/env bash
+#it's my first shell loop
 for i in {1..10}; do
 	echo "Best School"
 done
