@@ -2,7 +2,7 @@
 #a little complicated loop
 count=1
 while ((count<=10)); do
-	if ((count==9)); then
+	if ((count==10)); then
 		echo "Hi"
 	fi
 	echo "Best School"
