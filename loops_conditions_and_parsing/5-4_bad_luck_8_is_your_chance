@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#bir serh
+a=1
+while ((a<=10)); do
+	if ((a==5)); then
+		echo "bad luck"
+	elif ((a==8)); then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	a=$((a=a+1))
+done
