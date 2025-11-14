@@ -7,5 +7,5 @@ while ((count<=10)); do
 	else
 		echo "Best School"
 	fi
-	count=$((count++))
+	count=$((count+1))
 done
