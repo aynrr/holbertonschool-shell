@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #comment
-IFS=":"
+IFS=" : "
 while read A B C D E F G ; do
 	echo" $A:$C:$F"
 done < /etc/passwd
