@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#it's just a comment
+for file in * ; do
+	a=${file#*-}
+	echo "$a"
+done
