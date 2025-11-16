@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #jus a comment for passwd task
 while IFS=":" read -r name password uid gid gcos home shell; do
-	/bin/echo "The user $name is part of the $gid  gang, lives in $home and rides $shell. $uid's place is protected by the passcode $password, more info about the user here: $gcos"	
+	echo "The user $name is part of the $gid  gang, lives in $home and rides $shell. $uid's place is protected by the passcode $password, more info about the user here: $gcos"	
 done < /etc/passwd
