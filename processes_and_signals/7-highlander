@@ -3,7 +3,7 @@
 messagge() {
 echo "Killed"
 }
-trap 'messagge' SIGTERM
+trap 'messagge' SIGKILL
 while true; do
 	echo "To infinity and beyond"
 	sleep 2
