@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #comment
-messagge()={
+messagge() {
 echo "I am invincible!!!"
 }
 trap 'messagge' SIGTERM
