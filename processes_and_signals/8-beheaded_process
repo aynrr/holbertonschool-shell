@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 #commenttt
 PID=$(pidof 7-highlander)
-kill -9 "$PID"
+if [ -n "$PID" ]; then
+	kill -9 "$PID"
+fi
