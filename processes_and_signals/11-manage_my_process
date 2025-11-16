@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+#axot yoxdu ))
+PID_FILE="/var/run/my_process.pid"
+PROCESS_CMD="./manage_my_process"
+
+start() {
+    # Run the process in background and save its PID
+    $PROCESS_CMD &
+    echo $! > "$PID_FILE"
+    echo "manage_my_process started"
+}
+
+stop() {
+    # Kill the process using PID file
+    if [ -f "$PID_FILE" ]; then
+        kill "$(cat $PID_FILE)" 2>/dev/null
+        rm "$PID_FILE"
+    fi
+    echo "manage_my_process stopped"
+}
+
+restart() {
+    stop
+    sleep 1
+    start
+    echo "manage_my_process restarted"
+}
+
+# Main
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        restart
+        ;;
+    *)
+        echo "Usage: manage_my_process {start|stop|restart}"
+        ;;
+esac
