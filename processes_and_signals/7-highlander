@@ -3,8 +3,8 @@
 messagge()={
 echo "I am invincible!!!"
 }
+trap 'messagge' SIGTERM
 while true; do
 	echo "To infinity and beyond"
 	sleep 2
-	trap 'messagge' SIGTERM
 done
