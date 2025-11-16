@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #a comment
-$PID= pgrep 0-what-is-my-pid
+PID= pgrep 0-what-is-my-pid
 echo "$PID"
