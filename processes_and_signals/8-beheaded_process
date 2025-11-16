@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #commenttt
-pkill 7-highlander
+PID=$(pgrep 7-highlander)
+kill -9 "$PID"
