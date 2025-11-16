@@ -5,4 +5,7 @@ echo $$ > "$pid"
 trap 'echo "I hate the kill command"; rm -rf "$pid"; exit' SIGTERM
 trap 'echo "Y U no love me?1";' SIGINT
 trap 'rm -rf "$pid"; exit' SIGQUIT
-
+while true; do
+	echo "To infinity and beyond"
+	sleep 1
+done
