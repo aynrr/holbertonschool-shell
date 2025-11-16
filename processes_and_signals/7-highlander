@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #comment
 messagge() {
-echo "I am invincible!!!"
+echo "Killed"
 }
 trap 'messagge' SIGTERM
 while true; do
