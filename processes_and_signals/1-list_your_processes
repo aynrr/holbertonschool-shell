@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #short comment
-PID=ps -ef --forest
+PID=ps -e -f --forest
 echo "$PID"
